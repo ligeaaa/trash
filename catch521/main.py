@@ -10,7 +10,7 @@ from skimage.metrics import structural_similarity as ssim
 from loguru import logger
 
 # ----------- 配置 -----------
-pytesseract.pytesseract.tesseract_cmd = r"tesseract"  # 可以修改为你的绝对路径
+pytesseract.pytesseract.tesseract_cmd = r"tesseract"  # 如果系统路径中tesseract，则这样写。没有则写tesseract.exe的绝对路径
 frame_rate = 0.2
 keyword = "521"
 save_dir = os.path.join(os.getcwd(), "captured")
